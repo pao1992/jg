@@ -1,4 +1,4 @@
- <widget id="A6064779939797"  version="0.0.1">
+ <widget id="A6064716135915"  version="0.0.1">
     <name>Hello APP</name>
     <description>
         Example For APICloud.
@@ -12,7 +12,7 @@
 	<preference name="statusBarAppearance" value="true" />
 	<feature name="ajpush">
 		<param name="channel" value="developer-apicloud" />
-		<param name="app_key" value="5f9033f94c237cf27748f408" />
+		<param name="app_key" value="d4e5671cc923c682f38cc8fe" />
 	</feature>
 
 </widget>
