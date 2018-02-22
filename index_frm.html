@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,user-scalable=0">
+    <title>jpush</title>
+    <link rel="stylesheet" type="text/css" href="./css/api.css" />
+    <link rel="stylesheet" type="text/css" href="./css/box.css" />
+    <style>
+
+    </style>
+    <script type="text/javascript">
+
+		var jpush = null;
+		apiready = function(){
+	    	jpush = api.require('ajpush');
+	    }
+
+		function initJPush(){
+			jpush.init(function(ret, err){
+				if(ret && ret.status){
+					alert('操作成功!');
+				}else{
+					alert('操作失败!');
+				}
+			});
+		}
+
+
+	</script>
+</head>
+<body>
+    <div id="wrap">
+    	<div class='itemtitle'>1、基本操作</div>
+        	<div class="clickbtn" tapmode="active" onclick="initJPush()" >初始化推送</div>
+    </div>
+</body>
+</html>
