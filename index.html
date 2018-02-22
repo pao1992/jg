@@ -25,11 +25,32 @@
 
 </body>
 <script type="text/javascript">
+		//
+    // apiready = function(){
+		//
+  	// 	openContent('index_frm.html', 'main-con');
+    // }
 
-    apiready = function(){
+		window.apiready = function () {
+        api.setStatusBarStyle({
+            style: 'light'
+        });
+        api.openFrame({
+            name: 'index',
+            //url: 'dist/html/index.html', //上传打包时使用
+            url: 'http://192.168.0.5:8010', //调试时使用
+            rect: {
+                x: 0,
+                y: 45,
+                w: 'auto',
+                h: 'auto'
+            },
+            bounces: false,
+            vScrollBarEnabled: true,
+            hScrollBarEnabled: true
+        });
 
-  		openContent('index_frm.html', 'main-con');
-    }
+    };
 
 </script>
 </html>
